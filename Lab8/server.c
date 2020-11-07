@@ -1,3 +1,47 @@
+/*
+Write a client-server UDP socket program. This program is used to store and
+query the student information, which will do following task.
+
+    ● Client initiate the connection with server. Server will reply a Welcome 
+      message and ask to enter any one of these commands OPTION or EXIT.
+    ● When client will send OPTION command, the server will display followingoptions.
+
+    i. Add
+    ii. View_roll number/ view_all
+    iii. Delete_roll number/ Delete_all
+    iv. Roll-number_avg / Class_avg
+
+Functionality of these commands should be-
+
+    Add :- This command allow client to add the new student information at server.
+    A student information will consist of-
+    - Roll number
+    - Class
+    - Subject_1 marks (out of 100)
+    - Subject_2 marks
+    - Subject_3 marks
+    The server should use structure to store this information.
+
+    View_roll number / View_all :- This command allows a client to view the
+    information of a student individually via View_roll number or for the whole
+    class via View_all command.
+
+    Delete_roll number / Delete_all :- This command allows a client to delete
+    the information of individual student or for whole class.
+
+    Roll-number_avg / Class_avg :- This command will allow a client to get the
+    average of subject_1, subject_2 and subject_3 of an individual student via
+    Roll-number_avg command or the average of whole class via Class_avg
+    command.
+
+    Exit :- This command will terminate the session after displaying goodbye
+    message.
+
+    After each execution of a command (except Exit) the control should come
+    back to Option or Exit page so that a client can run commands multiple
+    times until he/she selects exit command.
+*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
